@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.restaurant {
+  flex-grow: 1;
+  background-color: rgb(230, 230, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: white;
+  display: flex;
+  min-height: 90%;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.camkenari {
+  writing-mode: vertical-lr;
+  font-size: 3rem;
+  transform: rotateZ(180deg);
+  text-align: center;
+  background-color: rgba(110, 202, 182, 0.6);
+  color: rgb(161, 161, 161);
+  border-radius: 15px;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(3, 150px);
+}

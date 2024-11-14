@@ -1,5 +1,10 @@
 import RestaurantHeader from "../components/restaurantHeader";
 import "./Restaurant.css";
+import Table from "../components/Table";
+import restoranData from "../assets/mockupdata";
+
+const restoran = restoranData.restaurants[0];
+const restoranMasalari = restoran.tables;
 
 function Restaurant() {
   return (
@@ -9,12 +14,9 @@ function Restaurant() {
         <article>
           <div className="camkenari">CAM KENARI</div>
           <aside>
-            <div>Deneme</div>
-            <div>Deneme</div>
-            <div>Deneme</div>
-            <div>Deneme</div>
-            <div>Deneme</div>
-            <div>Deneme</div>
+            {restoranMasalari.map((table) => (
+              <Table key={table.id} data={table} />
+            ))}
           </aside>
         </article>
       </main>

@@ -24,7 +24,7 @@ const reservationData = {
         },
         {
           id: 4,
-          capacity: 4,
+          capacity: 1,
           is_reserved: false,
           reserved_by: null,
         },
@@ -36,13 +36,13 @@ const reservationData = {
         },
         {
           id: 6,
-          capacity: 4,
+          capacity: 8,
           is_reserved: false,
           reserved_by: null,
         },
         {
           id: 8,
-          capacity: 4,
+          capacity: 3,
           is_reserved: false,
           reserved_by: null,
         },
